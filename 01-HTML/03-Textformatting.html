@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Text Formatting</h1>
+
+    <p>
+        <b>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque porro tempore eius consequuntur? Omnis quibusdam dolorem, placeat numquam, molestiae deleniti commodi libero blanditiis, debitis similique adipisci nostrum? Explicabo, culpa veritatis?</b>
+        <i>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit dolore eum est autem totam velit perspiciatis hic, repellendus beatae fugiat similique qui veritatis recusandae alias facere nam! Maxime, neque nisi!</i>
+    </p>
+
+    <p>
+        <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad cupiditate excepturi facilis hic debitis impedit consequuntur natus, nobis dicta, maiores voluptas, praesentium ipsum perspiciatis ea ex voluptates. Quasi, enim explicabo!</strong>
+        <em>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut doloribus <mark>sapiente fugit nam, natus ea quaerat suscipit veniam aliquam cupiditate hic laudantium ratione repudiandae sint minima earum est laboriosam tempora.</mark></em>
+        <ins>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam eos magnam vitae doloribus quod veniam dolorum sint excepturi nostrum suscipit! Recusandae harum atque enim illo tenetur nobis corrupti beatae neque.</ins>
+    </p>
+
+    <pre>
+    <code>
+#include &lt;iostream&gt;
+#include &lt;iterator&gt; // for std::size
+int main()
+{
+    int scores[] = { 84, 92, 76, 81, 56 };
+    const int numStudents = std::size(scores); // requires C++17
+//  const int numStudents = sizeof(scores) / sizeof(scores[0]); // use this instead if not C++17 capable
+ 
+    int maxScore = 0; // keep track of our largest score
+ 
+    // now look for a larger score
+    for (int student = 0; student &lt; numStudents; ++student)
+        if (scores[student] > maxScore)
+            maxScore = scores[student];
+ 
+    std::cout &lt;&lt; "The best score was " &lt;&lt; maxScore &lt;&lt; '\n';
+ 
+    return 0;
+}
+    </code>
+</pre>
+
+    <h2>&alpha; &pi; &gamma; &int; &infin;</h2>
+
+    <h2>H<sub>2</sub>O</h2>
+    <h2>3<sup>rd</sup>Feb</h2>
+    <h2>Price : <del><small>200</small></del>100Rs</h2>
+
+    <address>
+        23, 1<sup>st</sup>floor, Block-C <br>
+        Pocket-9, Sector-7 <br>
+        Rohini, New Delhi
+    </address>
+
+</body>
+
+</html>

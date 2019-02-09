@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            height: 200px;
+            background-color: lightcoral;
+        }
+        
+        #div_1 {
+            background-color: lightcyan;
+        }
+        
+        #div_3 {
+            background-color: blueviolet;
+        }
+        
+        .class_1 {
+            width: 500px;
+        }
+        
+        .class_3 {
+            width: 1000px;
+        }
+        
+        .class_2 {
+            width: 700px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Id Vs Class</h1>
+    <!-- Id Vs Class
+    Id - Identity
+    - represented by #
+    - an element can have a unique id
+    - that id cannot be given to any other element
+    - also, a single element cannot have multiple ids
+    Class - grouping of elements
+    - an element can have any number of classes
+    - a class can be repeated any number of times
+    - represented by . -->
+
+    <div id="div_1" class="class_1"></div>
+    <hr>
+    <div id="div_2" class="class_2 class_1"></div>
+    <hr>
+    <div id="div_3" class="class_1 class_3"></div>
+    <hr>
+    <div id="div_4" class="class_2 class_4 class_3"></div>
+
+</body>
+
+</html>
