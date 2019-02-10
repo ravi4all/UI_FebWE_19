@@ -1,0 +1,33 @@
+body {
+    margin: 0px;
+    background-image: url("https://icc-static-files.s3.amazonaws.com/ICC/photo/2018/09/14/e9294834-eee2-4538-a8ef-9d3119ff9d46/GettyImages-1000613016.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+div {
+    background-size: 100% 100%;
+    height: 600px;
+    margin-bottom: 500px;
+    /* background-attachment: fixed; */
+}
+
+#div_1 {
+    background-image: url("https://akm-img-a-in.tosshub.com/indiatoday/images/story/201902/msdhoni080219_0.jpeg?eK9qnhPZihl_3zk80KS9M38cwe3yvWcd")
+}
+
+#div_2 {
+    background-image: url("https://d1u4oo4rb13yy8.cloudfront.net/article/dqnpuukstl-1533887768.jpg");
+}
+
+#div_3 {
+    background-image: url("https://icc-static-files.s3.amazonaws.com/ICC/photo/2018/08/09/3ebd788c-9023-42be-8b15-11ce36986a44/MS-Dhoni.jpg");
+}
+
+#div_4 {
+    background-image: url("https://www.hindustantimes.com/rf/image_size_960x540/HT/p2/2018/03/16/Pictures/cricket-rsa-ind-t20_d3e78cd0-2924-11e8-a8dd-98cd3615fcfa.jpg");
+}
+
+#div_5 {
+    background-image: url("https://st3.cricketcountry.com/wp-content/uploads/2016/03/Indias-captain-Mahendra-Singh-Dhoni-makes-field-placement-during-the-first-T20-international-match-between-India-and-Sri-Lanka.jpg")
+}
