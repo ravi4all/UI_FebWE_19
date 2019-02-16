@@ -1,0 +1,21 @@
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.col-1 {
+    background-color: lightcoral;
+    float: left;
+    width: 40%;
+}
+
+.col-2 {
+    float: right;
+    width: 40%;
+    background-color: lightgray;
+}
+
+.blank {
+    clear: both;
+}
