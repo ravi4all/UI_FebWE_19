@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        ul {
+            margin: 0px;
+            padding: 0px;
+            position: relative;
+        }
+        
+        .submenu_2 ul {
+            display: inline-block;
+            width: 24%;
+        }
+        
+        ul li {
+            display: inline-block;
+            background-color: lightcoral;
+            width: 15%;
+            text-align: center;
+        }
+        
+        ul li.submenu {
+            position: relative;
+        }
+        
+        ul li a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #000;
+        }
+        
+        .dropdown {
+            position: absolute;
+            width: 100%;
+            top: 38px;
+            display: none;
+        }
+        
+        .submenu_2 .dropdown {
+            left: 0px;
+            background-color: lightgray;
+        }
+        
+        .dropdown ul li {
+            display: block;
+            width: 100%;
+            background-color: lightgray;
+        }
+        
+        ul li:hover .dropdown {
+            display: block;
+        }
+        
+        .dropdown_2 {
+            position: absolute;
+            left: 100%;
+            top: 0px;
+            width: 100%;
+            border: 2px solid red;
+            display: none;
+        }
+        
+        .dropdown ul li:hover .dropdown_2 {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Navbar</h1>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Women</a></li>
+        <li class="submenu_2">
+            <a href="#">Sports</a>
+            <div class="dropdown">
+                <ul>
+                    <li><a href="#">Cricket</a></li>
+                    <li><a href="#">Chess</a></li>
+                    <li><a href="#">Football</a></li>
+                    <li><a href="#">Table Tennis</a></li>
+                    <li><a href="#">Hockey</a></li>
+                    <li><a href="#">Volleyball</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Cricket</a></li>
+                    <li><a href="#">Chess</a></li>
+                    <li><a href="#">Football</a></li>
+                    <li><a href="#">Table Tennis</a></li>
+                    <li><a href="#">Hockey</a></li>
+                    <li><a href="#">Volleyball</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Cricket</a></li>
+                    <li><a href="#">Chess</a></li>
+                    <li><a href="#">Football</a></li>
+                    <li><a href="#">Table Tennis</a></li>
+                    <li><a href="#">Hockey</a></li>
+                    <li><a href="#">Volleyball</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Cricket</a></li>
+                    <li><a href="#">Chess</a></li>
+                    <li><a href="#">Football</a></li>
+                    <li><a href="#">Table Tennis</a></li>
+                    <li><a href="#">Hockey</a></li>
+                    <li><a href="#">Volleyball</a></li>
+                </ul>
+            </div>
+        </li>
+        <li class="submenu">
+            <a href="#">Kids</a>
+            <div class="dropdown">
+                <ul>
+                    <li><a href="#">Cricket</a></li>
+                    <li><a href="#">Chess</a></li>
+                    <li>
+                        <a href="#">Football</a>
+                        <div class="dropdown_2">
+                            <ul>
+                                <li><a href="#">Item_1</a></li>
+                                <li><a href="#">Item_2</a></li>
+                                <li><a href="#">Item_3</a></li>
+                                <li><a href="#">Item_4</a></li>
+                                <li><a href="#">Item_5</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">Table Tennis</a></li>
+                    <li><a href="#">Hockey</a></li>
+                    <li><a href="#">Volleyball</a></li>
+                </ul>
+            </div>
+        </li>
+        <li class="submenu">
+            <a href="#">Electronics</a>
+            <div class="dropdown">
+                <ul>
+                    <li><a href="#">Cricket</a></li>
+                    <li><a href="#">Chess</a></li>
+                    <li><a href="#">Football</a></li>
+                    <li><a href="#">Table Tennis</a></li>
+                    <li><a href="#">Hockey</a></li>
+                    <li><a href="#">Volleyball</a></li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+
+</body>
+
+</html>
