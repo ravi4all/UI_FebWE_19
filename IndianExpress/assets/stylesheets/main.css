@@ -49,7 +49,7 @@ a {
 }
 
 .container {
-    width: 1250px;
+    width: 1220px;
     margin: 0 auto;
 }
 
@@ -98,8 +98,21 @@ a {
     margin-top: 20px;
 }
 
-#header .header_top ul li {
+#header ul li {
     display: inline-block;
+}
+
+#header .header_bottom {
+    text-align: center;
+    padding-top: 10px;
+}
+
+#header .header_bottom ul li {
+    margin: 0px 20px;
+}
+
+#header .header_bottom ul li a {
+    color: #000;
 }
 
 #main-navigation {
@@ -109,7 +122,7 @@ a {
 
 #main-navigation ul li {
     display: inline-block;
-    margin: 0px 6px;
+    margin: 0px 5px;
     text-transform: uppercase;
     font-size: 14px;
 }
@@ -118,3 +131,107 @@ a {
 
 
 /* Specific CSS */
+
+#section_1 .sidebar_1 {
+    width: 26%;
+}
+
+#section_1 .main_content {
+    width: 45%;
+    margin: 0px 10px;
+    padding: 0px 10px;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+}
+
+#section_1 .sidebar_2 {
+    width: 25%;
+}
+
+#section_1 h3 {
+    color: #9f9f9f;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+#section_1 .sidebar_1 span,
+#section_1 .sidebar_1 a {
+    color: #7b7b7b;
+}
+
+#section_1 .sidebar_1 h4 a {
+    color: #000;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+#section_1 .sidebar_1 ul li {
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+#section_1 .sidebar_1 ul li:last-child {
+    border: none;
+}
+
+#section_1 .sidebar_1 ul li .time {
+    margin-left: 20px;
+}
+
+#section_1 .sidebar_2 .text {
+    width: 60%;
+}
+
+#section_1 .sidebar_2 .image {
+    width: 19%;
+}
+
+#section_1 .sidebar_2 .widget {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid lightgray;
+}
+
+.image {
+    width: 28%;
+}
+
+.text {
+    width: 67%;
+}
+
+.text h4 {
+    margin-bottom: 5px;
+}
+
+.text a {
+    color: #000;
+}
+
+.text span {
+    color: #7b7b7b;
+}
+
+#section_2 .must_read {
+    width: 68%;
+}
+
+#section_2 .latest_news {
+    width: 32%;
+}
+
+#section_2 .must_read .col {
+    width: 48%;
+    margin-right: 10px;
+}
+
+#section_2 .must_read .news_1 {
+    margin-bottom: 30px;
+}
+
+#section_2 .must_read ul li {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid lightgray;
+}
