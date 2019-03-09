@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Forms</h1>
+
+    <form action="#">
+        <table>
+            <tr>
+                <td>Enter Name</td>
+                <td>
+                    <input type="text" placeholder="Enter name" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Password</td>
+                <td>
+                    <input type="password" placeholder="Enter password">
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Email</td>
+                <td>
+                    <input type="email" placeholder="Enter Email" autofocus autocomplete="off">
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Age</td>
+                <td>
+                    <input type="number" min="18" max="50">
+                </td>
+            </tr>
+            <tr>
+                <td>Enter DOB</td>
+                <td>
+                    <input type="date">
+                </td>
+                <td>
+                    <input type="time">
+                </td>
+                <td>
+                    <input type="datetime-local">
+                </td>
+                <td>
+                    <input type="month">
+                </td>
+            </tr>
+            <tr>
+                <td>Select Range</td>
+                <td>
+                    <input type="range" value="0" max="1000" step="50" onchange="output.value=value">
+                </td>
+                <td>
+                    <output id="output">0</output>
+                </td>
+            </tr>
+            <tr>
+                <td>Choose Color</td>
+                <td>
+                    <input type="color">
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Card Number</td>
+                <td>
+                    <input type="text" placeholder="Enter card number" pattern="[0-9]{5}" title="Enter 5 digit number">
+                </td>
+            </tr>
+            <tr>
+                <td>Your Progress</td>
+                <td>
+                    <progress max="100" value="50"></progress>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter URL</td>
+                <td>
+                    <input type="url" placeholder="Enter URL">
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Message</td>
+                <td>
+                    <textarea placeholder="Enter Message" cols="30" rows="10"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+
+</html>
