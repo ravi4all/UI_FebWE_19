@@ -1,0 +1,32 @@
+body {
+    margin: 0px;
+    overflow: hidden;
+}
+
+#container {
+    height: 600px;
+    background-size: 100% 100%;
+    background-image: url("https://wallpaperplay.com/walls/full/4/f/6/112300.jpg");
+    transform: scale(2, 2);
+    transition: 30s;
+}
+
+#img_1 {
+    height: 400px;
+    width: 300px;
+    position: absolute;
+    top: 2%;
+    left: 30%;
+    transform: scale(0.001, 0.001) translateY(-500px);
+    transition: 10s;
+    background-size: 100% 100%;
+    background-image: url("../../images/NewImages/14984123774008 (1).png")
+}
+
+body:hover #container {
+    transform: scale(1, 1);
+}
+
+body:hover #img_1 {
+    transform: scale(1.5, 1.5) translateY(100px);
+}

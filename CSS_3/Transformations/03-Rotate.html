@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            width: 300px;
+            height: 400px;
+            margin: 0 auto;
+            border: 4px solid red;
+            padding: 20px;
+            perspective: 500px;
+        }
+        
+        img {
+            width: 100%;
+            transition: 2s;
+            height: inherit;
+            transform-origin: left;
+            /* transform: rotateZ(0deg) scale(0.01, 0.01); */
+        }
+        
+        div:hover img {
+            /* transform: rotateX(180deg); */
+            /* transform: rotateY(180deg); */
+            /* transform: rotateZ(3600deg) scale(2, 2); */
+            transform: rotateY(-180deg);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Transform Rotate</h1>
+
+    <div>
+        <img src="../../images/bahubali.jpg" alt="">
+    </div>
+
+</body>
+
+</html>
