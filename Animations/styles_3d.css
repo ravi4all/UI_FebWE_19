@@ -1,0 +1,51 @@
+body {
+    /* perspective: 1000px; */
+    overflow: hidden;
+}
+
+#sun {
+    height: 200px;
+    width: 200px;
+    margin: 150px auto 0px;
+    background-image: url("https://thumbs.gfycat.com/WatchfulGiganticCassowary-max-1mb.gif");
+    background-size: 100% 100%;
+    position: absolute;
+    left: 45%;
+    /* z-index: 100; */
+}
+
+#earth {
+    height: 100px;
+    width: 600px;
+    position: absolute;
+    left: 26%;
+    top: 190px;
+    background-image: url("../../images/00-22.gif");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    animation: anim_1 5s infinite linear;
+}
+
+@keyframes anim_1 {
+    0% {
+        transform: translateX(0px);
+    }
+    25% {
+        transform: translateX(400px);
+    }
+    40% {
+        transform: translateX(600px);
+    }
+    51% {
+        z-index: -1;
+        transform: translateX(600px);
+    }
+    99% {
+        transform: translateX(0px);
+        z-index: -1;
+    }
+    100% {
+        transform: translateX(0px);
+        z-index: 1;
+    }
+}
