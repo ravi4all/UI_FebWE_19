@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        #parent {
+            display: flex;
+            /* justify-content: space-around; */
+            /* justify-content: space-between; */
+            justify-content: center;
+            align-items: flex-start;
+        }
+        
+        .col {
+            border: 2px solid red;
+            padding: 10px;
+            /* margin: 0px 20px; */
+        }
+        
+        img {
+            width: 100%;
+        }
+        
+        p {
+            margin: 0px;
+        }
+        
+        .col-1 {
+            width: 18%;
+        }
+        
+        .col-2 {
+            width: 40%;
+        }
+        
+        .col-3 {
+            width: 20%;
+        }
+        
+        ul {
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        
+        li {
+            background-color: lightblue;
+            height: 200px;
+            width: 30%;
+            margin-bottom: 10px;
+            list-style: none;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="col">
+            <h1>Flexbox</h1>
+        </div>
+        <div class="col">
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+        </div>
+    </header>
+
+    <div id="parent">
+        <div class="col col-1">
+            <h2>This is column_1</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam quo suscipit adipisci officia, praesentium commodi expedita saepe reprehenderit. Saepe labore eos eligendi nisi? Architecto hic quidem atque cupiditate, praesentium eligendi?
+            </p>
+            <img src="../../images/images/download (1).jpg" alt="">
+        </div>
+        <div class="col col-2">
+            <h2>This is column_2</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam quo suscipit adipisci officia, praesentium commodi expedita saepe reprehenderit. Saepe labore eos eligendi nisi? Architecto hic quidem atque cupiditate, praesentium eligendi?
+            </p>
+            <img src="../../images/images/download (1).jpg" alt="">
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid, assumenda architecto? Molestias dolore mollitia, magnam ullam doloribus eos, ea necessitatibus esse id incidunt, quos temporibus consectetur blanditiis totam minus deleniti. Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Aliquam facilis aspernatur consequatur blanditiis, magnam, inventore eius autem sunt qui exercitationem, doloremque nihil cum optio recusandae. Beatae praesentium ipsam non vitae!
+            </p>
+        </div>
+        <div class="col col-3">
+            <h2>This is column_3</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam quo suscipit adipisci officia, praesentium commodi expedita saepe reprehenderit. Saepe labore eos eligendi nisi? Architecto hic quidem atque cupiditate, praesentium eligendi?
+            </p>
+            <img src="../../images/images/download (1).jpg" alt="">
+        </div>
+    </div>
+
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+</body>
+
+</html>
