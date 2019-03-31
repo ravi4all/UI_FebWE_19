@@ -66,8 +66,20 @@ p::selection {
 }
 
 .container {
-    width: 1200px;
+    width: 1180px;
     margin: 0 auto;
+}
+
+@media(max-width:1200px) {
+    .container {
+        width: 960px;
+    }
+}
+
+@media(max-width:992px) {
+    .container {
+        width: 740px;
+    }
 }
 
 
@@ -191,6 +203,15 @@ p::selection {
     background-position: -5px -85px;
 }
 
+@media(max-width:992px) {
+    #header .logo {
+        width: 35%;
+    }
+    #header .search {
+        width: 100%;
+    }
+}
+
 .navbar {
     background-color: #1B2839;
 }
@@ -254,6 +275,91 @@ p::selection {
 .navbar .nav ul li:hover:after,
 .navbar .nav ul li.active:after {
     transform: scale(1, 1);
+}
+
+.navbar .menu-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-color: transparent;
+    border: none;
+    display: none;
+    pointer-events: none;
+}
+
+.navbar .menu-btn .line {
+    display: block;
+    height: 3px;
+    width: 30px;
+    background-color: red;
+    margin-bottom: 4px;
+    transition: 0.5s;
+}
+
+.navbar input[value='toggle'] {
+    position: absolute;
+    right: 24px;
+    height: 20px;
+    top: 17px;
+    width: 30px;
+    opacity: 0;
+}
+
+@media(max-width:1200px) {
+    .navbar .category {
+        padding: 9px 14px;
+        width: 17%;
+    }
+}
+
+@media(max-width:992px) {
+    .navbar {
+        position: relative;
+    }
+    .navbar .menu-btn {
+        display: block;
+    }
+    .navbar .nav ul {
+        position: absolute;
+        display: block;
+        background-color: rgba(0, 0, 0, 0.8);
+        text-align: center;
+        width: 100%;
+        top: 60px;
+        left: 0px;
+        z-index: 1;
+        transform: translateX(-150%);
+        transition: 0.5s;
+    }
+    .navbar .nav ul li {
+        margin: 0px 0px 10px;
+        padding: 5px;
+    }
+    .navbar .nav ul li a {
+        color: #fff;
+    }
+    .navbar input[value='toggle']:checked~ul {
+        transform: translateX(0%);
+    }
+    .navbar input[value='toggle']:checked~.menu-btn .line:nth-child(2) {
+        opacity: 0;
+    }
+    .navbar input[value='toggle']:checked~.menu-btn .line:first-child {
+        transform: rotate(45deg);
+    }
+    .navbar input[value='toggle']:checked~.menu-btn .line:last-child {
+        transform: rotate(-45deg);
+        margin-top: -13px;
+    }
+    .navbar .nav ul li:after {
+        width: 100%;
+    }
+    .navbar .category {
+        width: 30%;
+    }
+    .navbar .help {
+        width: 40%;
+    }
 }
 
 #banner .slider {
@@ -348,6 +454,30 @@ a.shop_now {
 #section_1 .col:hover:after {
     transform: scale(1, 0);
     opacity: 1;
+}
+
+@media(max-width:1200px) {
+    #section_1 .image h3 {
+        font-size: 16px;
+    }
+    #section_1 .image p {
+        font-size: 14px;
+    }
+    #section_1 .image .desc {
+        bottom: 20px;
+    }
+}
+
+@media(max-width:992px) {
+    #section_1 .image img {
+        min-height: 200px;
+    }
+    #section_1 .image h3 {
+        font-size: 14px;
+    }
+    #section_1 .image p {
+        font-size: 12px;
+    }
 }
 
 .product {
