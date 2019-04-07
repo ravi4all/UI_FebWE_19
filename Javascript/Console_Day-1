@@ -1,0 +1,56 @@
+a = 12;
+12
+a = "hello";
+"hello"
+typeof(a)
+"string"
+a = 10.5;
+10.5
+typeof(a)
+"number"
+a = 34
+34
+b = 11;
+11
+a + b
+45
+a-  b
+23
+a / b
+3.090909090909091
+a * b
+374
+a = '10';
+"10"
+typeof(a)
+"string"
+b = 10
+10
+a == b
+true
+a === b
+false
+a + b
+"1010"
+c = 20
+20
+a + b + c
+"101020"
+b+c+a
+"3010"
+window
+Window {postMessage: ƒ, blur: ƒ, focus: ƒ, close: ƒ, parent: Window, …}
+navigator
+Navigator {vendorSub: "", productSub: "20030107", vendor: "Google Inc.", maxTouchPoints: 0, hardwareConcurrency: 4, …}
+navigator.appCodeName
+"Mozilla"
+navigator.appName
+"Netscape"
+navigator.vendor
+"Google Inc."
+navigator.cookieEnabled
+true
+navigator.onLine
+true
+document
+#document

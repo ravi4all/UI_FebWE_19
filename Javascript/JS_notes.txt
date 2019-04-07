@@ -1,0 +1,38 @@
+Javascript
+- Client Side + Server Side Scritping Language
+
+- High Level
+- Interpreted Language
+- Dynamically Typed
+- Weakly Typed
+- Prototype Based
+- Multi-Paradigm
+- Event Driven
+
+Use :
+DOM - Document Object Model
+BOM - Browser Object Model
+AJAX - Asynchronous Javascript and XML
+
+Jquery
+
+
+
+
+
+
+
+
+
+
+
+
+Netscape
+Nexus - Static
+
+Mosaic
+Mocha
+LiveScript
+Javascript
+
+ECMAScript
