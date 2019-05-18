@@ -13,6 +13,7 @@
 
     <script src="assets/javascripts/songs.js"></script>
     <script src="assets/javascripts/main.js"></script>
+    <script src="assets/javascripts/model.js"></script>
     <title>Hello, world!</title>
 </head>
 
@@ -67,6 +68,9 @@
                 <div class="col-md-3">
                     <aside id="sidebar">
                         <h2 class="text-center">Your Playlist</h2>
+                        <button id="save" class="btn btn-warning">Save Playlist</button>
+                        <button id="load" class="btn btn-warning">Load Playlist</button>
+                        <br><br>
                         <ul id="playlist"></ul>
                     </aside>
                 </div>
@@ -95,7 +99,9 @@
                 <div id="slider">
                     <span>00:00</span>
                     <input type="range" value="0" id="slide">
-                    <span>00:00</span>
+                    <span id="reminingTime">
+                        <span id="minutesRemaining">00</span>:<span id="secondsRemaining">00</span>
+                    </span>
                 </div>
             </div>
         </div>
