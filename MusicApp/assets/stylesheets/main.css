@@ -94,7 +94,7 @@ a {
     background-color: red;
 }
 
-#main h2 {
+#content h2 {
     margin: 20px 0px;
 }
 
@@ -109,6 +109,11 @@ a {
     margin-bottom: 20px;
     text-align: center;
     cursor: pointer;
+}
+
+#songsList li span {
+    display: block;
+    height: 50px;
 }
 
 #songsList li img {
@@ -145,4 +150,16 @@ h6 {
 #slide {
     width: 80%;
     vertical-align: middle;
+}
+
+#playlist li {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+#playlist li img {
+    width: 20%;
+    height: 60px;
 }
