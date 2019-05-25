@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #parent {
+            display: flex;
+        }
+        
+        .song {
+            width: 33%;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Function Chaining</h1>
+
+    <div id="parent">
+        <div class="song">
+            <h3 title="1">Song Name</h3>
+            <img src="../images/hulk5-18463.gif" alt="">
+            <h3>Song Artist</h3>
+            <h3>Movie/Album</h3>
+            <button class="fav">Add to favorite</button>
+            <button class="playlist">Add to Playlist</button>
+        </div>
+        <div class="song">
+            <h3 title="2">Song Name</h3>
+            <img src="../images/hulk5-18463.gif" alt="">
+            <h3>Song Artist</h3>
+            <h3>Movie/Album</h3>
+            <button class="fav">Add to favorite</button>
+            <button class="playlist">Add to Playlist</button>
+            <h3>Movie/Album</h3>
+        </div>
+        <div class="song">
+            <h3 title="3">Song Name</h3>
+            <img src="../images/hulk5-18463.gif" alt="">
+            <h3>Song Artist</h3>
+            <h3>Movie/Album</h3>
+            <button class="fav">Add to favorite</button>
+            <button class="playlist">Add to Playlist</button>
+        </div>
+    </div>
+
+    <script src="jquery-3.3.1.min.js"></script>
+    <script>
+        $(".playlist").click(function() {
+            // console.log($(this).closest("button"));
+            // $(this).siblings("h3").hide(1000);
+            // console.log($(this).siblings("h3").attr("title"));
+            // $(this).parent().hide(1000);
+            // $(this).parents().hide(1000);
+            // $(this).parentsUntil('body').hide(1000);
+            // $(this).parents().siblings('h1').hide(1000);
+            $(this).parent().siblings('.song').find('button').hide(1000);
+        })
+    </script>
+</body>
+
+</html>
